@@ -4,60 +4,119 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vaagdevi Junior & Degree College, Boath</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+    header {
+      background: #003366;
+      color: white;
+      padding: 20px 10px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    header img {
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    nav {
+      background: #0055a5;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 8px 12px;
+      font-size: 16px;
+      font-weight: bold;
+      display: inline-block;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .card {
+      background: white;
+      margin: 20px auto;
+      padding: 20px;
+      width: 90%;
+      max-width: 1000px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    .card h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: #003366;
+    }
+    .card img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    /* ✅ Mobile Responsive */
+    @media (max-width: 768px) {
+      header {
+        font-size: 18px;
+        padding: 15px;
+      }
+      header img {
+        width: 50px;
+        margin-bottom: 10px;
+      }
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      nav a {
+        font-size: 14px;
+        margin: 6px;
+      }
+      .card h2 {
+        font-size: 22px;
+      }
+      .card p {
+        font-size: 14px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container">
-      <!-- Logo + Name -->
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="assets/img/logo.jpg" alt="Logo" width="50" class="me-2">
-        <div>
-          <strong>Vaagdevi Junior & Degree College, Boath</strong><br>
-          <small>Affiliated to Kakatiya University</small>
-        </div>
-      </a>
+  <header>
+    <img src="assets/img/logo.jpg" alt="Logo" width="70">
+    Vaagdevi Junior & Degree College, Boath <br>
+    <small>Affiliated to Kakatiya University</small>
+  </header>
 
-      <!-- Toggler -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Menu -->
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="management.html">Management</a></li>
-          <li class="nav-item"><a class="nav-link" href="faculty.html">Faculty</a></li>
-          <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
-          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="management.html">Management</a>
+    <a href="faculty.html">Faculty</a>
+    <a href="courses.html">Courses</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="notice-board.html">Notice Board</a> <!-- ✅ కొత్త పేజీ -->
+    <a href="contact.html">Contact</a>
   </nav>
 
-  <!-- Hero Section -->
-  <div class="container my-4">
-    <div class="card shadow-lg">
-      <div class="card-body text-center">
-        <h2 class="mb-3">Welcome to Vaagdevi Junior & Degree College, Boath</h2>
-        <img src="assets/img/college.jpg" alt="College" class="img-fluid rounded mb-3">
-        <p>
-          Vaagdevi Junior & Degree College, Boath – A place of excellence in education, 
-          affiliated to Kakatiya University. Providing quality education and shaping 
-          young minds for a brighter future.
-        </p>
-      </div>
-    </div>
+  <div class="card">
+    <h2>Welcome to Vaagdevi Junior & Degree College, Boath</h2>
+    <img src="assets/img/college.jpg" alt="College Photo">
+    <p>
+      Vaagdevi Junior & Degree College, Boath – A place of excellence in education, 
+      affiliated to Kakatiya University. Providing quality education and shaping 
+      young minds for a brighter future.
+    </p>
   </div>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
