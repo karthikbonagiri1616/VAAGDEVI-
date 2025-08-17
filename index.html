@@ -1,103 +1,113 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vaagdevi Junior & Degree College, Boath</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-    }
-
-    /*  Banner Header */
-    header.banner {
-      position: relative;
-      background: url("assets/img/banner.jpg") no-repeat center center;
-      background-size: cover;
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-    header.banner::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0,0,0,0.4);
-    }
-    header.banner h1 {
-      position: relative;
-      color: white;
-      font-size: 36px;
-      font-weight: bold;
-      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
-      margin: 0;
-      padding: 0 10px;
-    }
-
-    /*  Navigation Bar */
-    nav {
-      background: #0055a5;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 8px 16px;
-      font-size: 16px;
-      font-weight: bold;
-      display: inline-block;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    /*  Main Content */
-    .main {
-      padding: 20px;
-      text-align: center;
-    }
-
-    /*  Responsive */
-    @media (max-width: 768px) {
-      header.banner {
-        height: 200px;
-      }
-      header.banner h1 {
-        font-size: 24px;
-      }
-      nav a {
-        font-size: 14px;
-        margin: 6px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <header class="banner">
-    <h1>Vaagdevi Junior & Degree College, Boath</h1>
-  </header>
-
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Courses</a>
-    <a href="#">Faculty</a>
-    <a href="#">Management</a>
-    <a href="#">Notice Board</a>
-    <a href="#">Contact</a>
+<!-- Header with Banner -->
+<header>
+  <img src="assets/img/d.jpg" alt="College Banner" class="banner">
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="management.html">Management</a></li>
+      <li><a href="faculty.html">Faculty</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="notice.html">Notice Board</a></li>
+      <li><a href="nss.html">NSS</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="admission.html">Admission</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
   </nav>
+</header>
 
-  <div class="main">
-    <h2>Integrated junior & degree programs with dedicated defence & competitive exam coaching</h2>
-    <p>Admissions open for 2025-26 • Orientation on 20 Aug 2025 • NCC registration open</p>
-    <!-- ...continue with sections like Junior College, Degree Programs etc. -->
+
+</section>
+
+<!-- Welcome / College Photo -->
+<center><section class="card">
+  <h2>Welcome to Vaagdevi Junior & Degree College, Boath</h2>
+  <img src="assets/img/college.jpg" alt="College Photo">
+  <p>We provide quality education, modern infrastructure, and defence coaching programs to help students achieve their full potential.</p>
+</section></center>
+
+<!-- About Section -->
+<section class="card intro">
+  <h2>About Us</h2>
+  <p>Vaagdevi Junior & Degree College, Boath, is dedicated to academic excellence,
+     discipline, and holistic development of students. Our experienced faculty and
+     modern facilities ensure every student achieves their goals.</p>
+  <a href="about.html" class="btn">Read More</a>
+</section>
+
+<!-- Chairman Message + Notices + Campus Photo -->
+<section class="grid-3">
+  <div class="card">
+    <h3>Chairman's Message</h3>
+    <p>Welcome to Vaagdevi College. We focus on academic excellence, discipline, and overall student growth.</p>
   </div>
+  <div class="card">
+    <h3>Latest Notices</h3>
+    <ul class="notice-list">
+      <li>Admission forms open for 2025 batch</li>
+      <li>Parent-Teacher meeting on 25th Aug</li>
+      <li>Science fair results announced</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>Campus Photo</h3>
+    <img src="assets/img/College.jpg" alt="Campus Photo">
+  </div>
+</section>
+
+<!-- Courses Section (Scrollable) -->
+<section class="card">
+  <h2>Our Courses</h2>
+ <div class="courses-scroll">
+
+    <div class="course-card"><h3>B.Sc Computer Science</h3></div>
+    <div class="course-card"><h3>B.Com</h3></div>
+    <div class="course-card"><h3>B.A</h3></div>
+    <div class="course-card"><h3>Intermediate MPC</h3></div>
+    <div class="course-card"><h3>Intermediate CEC</h3></div> 
+  </div>
+</section>
+
+<!-- Gallery Preview -->
+<section class="card">
+  <h2>Gallery</h2>
+  <div class="gallery-grid">
+    <marsquee><img src="assets/img/gallery1.jpg" onclick="openLightbox(this.src)"></marsquee>
+    <img src="assets/img/College.jpg" onclick="openLightbox(this.src)">
+    <img src="assets/img/gallery3.jpg" onclick="openLightbox(this.src)">
+    <img src="assets/img/gallery4.jpg" onclick="openLightbox(this.src)">
+  </div>
+</section>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()"><img id="lbImg" src="" alt="Preview"></div>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Vaagdevi Junior & Degree College, Boath. All Rights Reserved.<br>
+  <small>Website Designed by Karthik Bonagiri</small></p>
+</footer>
+
+<script>
+function openLightbox(src) {
+  document.getElementById('lbImg').src = src;
+  document.getElementById('lightbox').style.display = 'flex';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+}
+</script>
 
 </body>
 </html>
