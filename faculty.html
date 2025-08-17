@@ -5,76 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Faculty – Vaagdevi Junior & Degree College</title>
   <style>
-   
-/* Navigation Styling */
-.navbar {
-  background:#0055a5;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:10px 20px;
-}
-
-.navbar ul {
-  list-style:none;
-  margin:0;
-  padding:0;
-  display:flex;
-}
-
-.navbar li {
-  margin:0 10px;
-}
-
-.navbar a {
-  color:white;
-  text-decoration:none;
-  font-weight:bold;
-}
-
-.menu-btn {
-  display:none;
-  font-size:26px;
-  color:white;
-  cursor:pointer;
-}
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
-  .navbar ul {
-    display:none;
-    flex-direction:column;
-    background:#0055a5;
-    width:100%;
-    text-align:center;
-  }
-  .navbar ul li {
-    margin:10px 0;
-  }
-  .menu-btn {
-    display:block;
-  }
-}
-</style>
-
-<script>
-function toggleMenu() {
-  var nav = document.getElementById("navLinks");
-  if (nav.style.display === "flex") {
-    nav.style.display = "none";
-  } else {
-    nav.style.display = "flex";
-    nav.style.flexDirection = "column";
-  }
-}
-</script>
-
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #f8f9fa;
       color: #333;
     }
+
+    /* Header */
     header {
       background: #004080;
       color: white;
@@ -88,6 +26,57 @@ function toggleMenu() {
     header p {
       margin-top: 8px;
       font-size: 16px;
+    }
+
+    /* Navigation Styling */
+    .navbar {
+      background:#0055a5;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:10px 20px;
+    }
+    .navbar .logo {
+      color:white;
+      font-weight:bold;
+      font-size:18px;
+    }
+    .navbar ul {
+      list-style:none;
+      margin:0;
+      padding:0;
+      display:flex;
+    }
+    .navbar li {
+      margin:0 10px;
+    }
+    .navbar a {
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+    }
+    .menu-btn {
+      display:none;
+      font-size:26px;
+      color:white;
+      cursor:pointer;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+      .navbar ul {
+        display:none;
+        flex-direction:column;
+        background:#0055a5;
+        width:100%;
+        text-align:center;
+      }
+      .navbar ul li {
+        margin:10px 0;
+      }
+      .menu-btn {
+        display:block;
+      }
     }
 
     .intro {
@@ -148,15 +137,33 @@ function toggleMenu() {
   </style>
 </head>
 <body>
+  <!-- Header -->
   <header>
     <h1>Our Faculty</h1>
     <p>Vaagdevi Junior & Degree College — Defence Academy</p>
   </header>
 
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">Vaagdevi College</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="faculty.html">Faculty</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="management.html">Management</a></li>
+      <li><a href="notice.html">Notice Board</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <span class="menu-btn" onclick="toggleMenu()">☰</span>
+  </nav>
+
+  <!-- Intro -->
   <div class="intro">
-    Our faculty members are highly qualified and dedicated professionals who inspire and guide students to achieve excellence in both academics and life.
+    Our faculty members are highly qualified and dedicated professionals who inspire and guide 
+    students to achieve excellence in both academics and life.
   </div>
 
+  <!-- Faculty Grid -->
   <div class="grid">
     <div class="card">
       <img src="assets/img/SRINU (2).jpg" alt="Rajanala Srinivas">
@@ -169,73 +176,82 @@ function toggleMenu() {
       <p>Lecturer in English</p>
     </div>
     <div class="card">
-      <img src="assets/img/PRAVEEN.jpg" alt="Faculty 3">
+      <img src="assets/img/PRAVEEN.jpg" alt="Ch. Praveen Reddy">
       <h3>Ch. Praveen Reddy</h3>
       <p>Lecturer in Zoology</p>
     </div>
-
     <div class="card">
-      <img src="assets/img/MUTHYAM.jpg" alt="Faculty 3">
-      <h3>T.Muthyam</h3>
+      <img src="assets/img/MUTHYAM.jpg" alt="T. Muthyam">
+      <h3>T. Muthyam</h3>
       <p>Lecturer in Economics</p>
     </div>
-
     <div class="card">
-      <img src="assets/img/SATHISH.jpg" alt="Faculty 4">
+      <img src="assets/img/SATHISH.jpg" alt="Chatla Sathish">
       <h3>Chatla Sathish</h3>
       <p>Lecturer in Physics</p>
     </div>
     <div class="card">
-      <img src="assets/img/KARTHIK BONAGIRI.jpg" alt="Faculty 4">
+      <img src="assets/img/KARTHIK BONAGIRI.jpg" alt="Karthik Bonagiri">
       <h3>Karthik Bonagiri</h3>
       <p>Lecturer in Computer Science</p>
     </div>
-  <div class="card">
-      <img src="assets/img/PRASAD.jpg" alt="Faculty 4">
+    <div class="card">
+      <img src="assets/img/PRASAD.jpg" alt="Adepu Prasadi">
       <h3>Adepu Prasadi</h3>
       <p>Lecturer in Commerce</p>
     </div>
-   <div class="card">
-      <img src="assets/img/RAJESHWAR.jpg" alt="Faculty 4">
-      <h3>A.Rajeshwar</h3>
+    <div class="card">
+      <img src="assets/img/RAJESHWAR.jpg" alt="A. Rajeshwar">
+      <h3>A. Rajeshwar</h3>
       <p>Lecturer in Telugu</p>
     </div>
     <div class="card">
-      <img src="assets/img/Pandari.jpg" alt="Faculty 4">
-      <h3>N.Pandari</h3>
+      <img src="assets/img/Pandari.jpg" alt="N. Pandari">
+      <h3>N. Pandari</h3>
       <p>Lecturer in Botany</p>
     </div>
- <div class="card">
-      <img src="assets/img/DATHU.jpg" alt="Faculty 4">
-      <h3>K.Dathu</h3>
+    <div class="card">
+      <img src="assets/img/DATHU.jpg" alt="K. Dathu">
+      <h3>K. Dathu</h3>
       <p>Lecturer in Mathematics</p>
     </div>
-   <div class="card">
-      <img src="assets/img/MALLIKA.jpg" alt="Faculty 4">
-      <h3>M.Mallika</h3>
+    <div class="card">
+      <img src="assets/img/MALLIKA.jpg" alt="M. Mallika">
+      <h3>M. Mallika</h3>
       <p>Lecturer in Hindi</p>
     </div>
     <div class="card">
-      <img src="assets/img/HARISH.jpg" alt="Faculty 4">
-      <h3>A.Harish Reddy</h3>
+      <img src="assets/img/HARISH.jpg" alt="A. Harish Reddy">
+      <h3>A. Harish Reddy</h3>
       <p>Lecturer in Chemistry</p>
     </div>
-   <div class="card">
-      <img src="assets/img/SURESH.jpg" alt="Faculty 4">
+    <div class="card">
+      <img src="assets/img/SURESH.jpg" alt="Suresh">
       <h3>Suresh</h3>
       <p>Lecturer in Zoology</p>
     </div>
-     <div class="card">
-      <img src="assets/img/prashanth.jpg" alt="Faculty 4">
+    <div class="card">
+      <img src="assets/img/prashanth.jpg" alt="Boddu Prashanth">
       <h3>Boddu Prashanth</h3>
       <p>Lecturer in Mathematics</p>
     </div>
-  </section>
-    <!-- Add more faculty cards here -->
   </div>
 
+  <!-- Footer -->
   <footer>
     © 2025 Vaagdevi Junior & Degree College, Boath — All Rights Reserved | Designed by Karthik Bonagiri-9014443040
   </footer>
+
+  <script>
+    function toggleMenu() {
+      var nav = document.getElementById("navLinks");
+      if (nav.style.display === "flex") {
+        nav.style.display = "none";
+      } else {
+        nav.style.display = "flex";
+        nav.style.flexDirection = "column";
+      }
+    }
+  </script>
 </body>
 </html>
