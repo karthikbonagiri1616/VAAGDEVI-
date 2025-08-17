@@ -6,120 +6,145 @@
   <title>Vaagdevi Junior & Degree College, Boath</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+      color: #333;
     }
+
     header {
-      background: #003366;
-      color: white;
-      padding: 20px 10px;
+      background: #004080;
+      color: #fff;
+      padding: 15px 20px;
       text-align: center;
-      font-size: 24px;
-      font-weight: bold;
     }
+
     header img {
+      width: 60px;
       vertical-align: middle;
       margin-right: 10px;
     }
+
+    header h1 {
+      display: inline;
+      font-size: 24px;
+    }
+
     nav {
-      background: #0055a5;
+      background: #0066cc;
       padding: 10px;
       text-align: center;
     }
+
     nav a {
       color: white;
       text-decoration: none;
-      margin: 8px 12px;
-      font-size: 16px;
+      margin: 0 15px;
       font-weight: bold;
-      display: inline-block;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
-    .card {
-      background: white;
-      margin: 20px auto;
-      padding: 20px;
-      width: 90%;
-      max-width: 1000px;
-      border-radius: 12px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
-      text-align: center;
-    }
-    .card h2 {
-      font-size: 28px;
-      margin-bottom: 15px;
-      color: #003366;
-    }
-    .card img {
-      width: 100%;
-      max-height: 400px;
-      object-fit: cover;
-      border-radius: 12px;
-      margin-bottom: 15px;
+
+    .hero {
+      background: url('assets/imG/College.jpg') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 36px;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
     }
 
-    /* ✅ Mobile Responsive */
-    @media (max-width: 768px) {
-      header {
-        font-size: 18px;
-        padding: 15px;
-      }
-      header img {
-        width: 50px;
-        margin-bottom: 10px;
-      }
-      nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-      nav a {
-        font-size: 14px;
-        margin: 6px;
-      }
-      .card h2 {
-        font-size: 22px;
-      }
-      .card p {
-        font-size: 14px;
-      }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 15px;
+      font-size: 20px;
+      color: #004080;
+    }
+
+    .card p {
+      margin: 0 15px 15px;
+      font-size: 15px;
+      color: #555;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background: #004080;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="assets/img/logo.jpg" alt="Logo" width="70">
-    Vaagdevi Junior & Degree College, Boath <br>
+    <img src="assets/iMg/logo.jpg" alt="Logo">
+    <h1>Vaagdevi Junior & Degree College, Boath</h1><br>
     <small>Affiliated to Kakatiya University</small>
   </header>
 
   <nav>
     <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="management.html">Management</a>
     <a href="faculty.html">Faculty</a>
-    <a href="courses.html">Courses</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="notice-board.html">Notice Board</a> <!-- ✅ కొత్త పేజీ -->
+    <a href="management.html">Management</a>
+    <a href="notice.html">Notice Board</a>
     <a href="contact.html">Contact</a>
   </nav>
 
-  <div class="card">
-    <h2>Welcome to Vaagdevi Junior & Degree College</h2>
-    <img src="assets/img/College.jpg" alt="College Photo">
-    <p>
-      Vaagdevi Junior & Degree College, Boath – A place of excellence in education, 
-      affiliated to Kakatiya University. Providing quality education and shaping 
-      young minds for a brighter future.
-    </p>
+  <div class="hero">
+    Welcome to Vaagdevi College
   </div>
 
+  <section class="cards">
+    <div class="card">
+      <img src="assets/image/faculty1.jpg" alt="Faculty">
+      <h3>Experienced Faculty</h3>
+      <p>We have highly qualified and experienced lecturers dedicated to student success.</p>
+    </div>
+    <div class="card">
+      <img src="assets/image/students.jpg" alt="Students">
+      <h3>Vibrant Campus Life</h3>
+      <p>Our college offers a friendly environment with extracurricular activities.</p>
+    </div>
+    <div class="card">
+      <img src="assets/image/library.jpg" alt="Library">
+      <h3>Well Equipped Library</h3>
+      <p>Access to thousands of books and journals for academic excellence.</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Vaagdevi Junior & Degree College, Boath. All Rights Reserved.
+  </footer>
 </body>
 </html>
-
-
-
