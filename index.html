@@ -10,18 +10,22 @@
       font-family: Arial, sans-serif;
       background: #f4f4f4;
     }
-    header {
-      background: #003366;
-      color: white;
-      padding: 30px 20px;
+
+    /* ✅ Banner (Heading inside Banner) */
+    header.banner {
+      background: url("assets/img/IMAGE.jpg") no-repeat center center;
+      background-size: cover;
+      height: 250px; /* adjust height */
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      font-size: 24px;
+      color: white;
+      font-size: 32px;
       font-weight: bold;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
     }
-    header img {
-      vertical-align: middle;
-      margin-right: 10px;
-    }
+
     nav {
       background: #0055a5;
       padding: 10px;
@@ -38,6 +42,7 @@
     nav a:hover {
       text-decoration: underline;
     }
+
     .card {
       background: white;
       margin: 20px auto;
@@ -63,13 +68,10 @@
 
     /* ✅ Mobile Responsive */
     @media (max-width: 768px) {
-      header {
-        font-size: 18px;
-        padding: 15px;
-      }
-      header img {
-        width: 50px;
-        margin-bottom: 10px;
+      header.banner {
+        height: 150px;
+        font-size: 20px;
+        padding: 10px;
       }
       nav {
         display: flex;
@@ -91,27 +93,10 @@
 </head>
 <body>
 
+  <!-- ✅ Single Banner Heading -->
   <header class="banner">
-  <img src="assets/img/IMAGE.jpg" alt="College Banner" style="width:100%; height:auto;">
-</header>
-<header class="banner">
-  <h1>Vaagdevi Junior & Degree College, Boath</h1>
-</header>
-
-<style>
-  .banner {
-    background: url("assets/img/IMAGE.jpg") no-repeat center center;
-    background-size: cover;
-    height: 250px; /* Adjust height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 28px;
-    font-weight: bold;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
-  }
-</style>
+    Vaagdevi Junior & Degree College, Boath
+  </header>
 
   <nav>
     <a href="index.html">Home</a>
@@ -120,7 +105,7 @@
     <a href="faculty.html">Faculty</a>
     <a href="courses.html">Courses</a>
     <a href="gallery.html">Gallery</a>
-    <a href="notice-board.html">Notice Board</a> <!-- ✅ కొత్త పేజీ -->
+    <a href="notice-board.html">Notice Board</a>
     <a href="contact.html">Contact</a>
   </nav>
 
@@ -136,16 +121,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
